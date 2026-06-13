@@ -1,0 +1,444 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fa;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 8%;
+
+    background:#1e3a5f;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+    color:white;
+    font-size:1.4rem;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+.menu-toggle{
+    display:none;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+/* BANNER */
+
+.banner{
+    height:500px;
+    position:relative;
+    overflow:hidden;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+
+    opacity:0;
+
+    transition:opacity 1s ease-in-out;
+}
+
+.slide::after{
+    content:"";
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.45);
+
+    z-index:1;
+}
+
+.slide.active{
+    opacity:1;
+}
+
+.slider-dots{
+
+    position:absolute;
+
+    bottom:25px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    gap:12px;
+
+    z-index:10;
+
+}
+
+.dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.5);
+
+    transition:.3s;
+
+}
+
+.active-dot{
+
+    background:#d4af37;
+
+    transform:scale(1.3);
+
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.banner-text{
+    position:absolute;
+
+    left:50%;
+    bottom:40px;
+
+    transform:translateX(-50%);
+
+    text-align:center;
+
+    width:90%;
+
+    z-index:2;
+
+    color:white;
+}
+
+.banner-text h1{
+
+    font-size:5rem;
+
+    font-weight:900;
+
+    letter-spacing:10px;
+
+    margin-bottom:10px;
+
+    text-transform:uppercase;
+
+    text-shadow:
+    0 4px 15px rgba(0,0,0,.9);
+}
+
+.banner-text h1::after{
+
+    content:"";
+
+    display:block;
+
+    width:250px;
+
+    height:3px;
+
+    background:#d4af37;
+
+    margin:15px auto;
+}
+
+.banner-text p{
+
+    font-size:1rem;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-weight:600;
+
+    color:#d4af37;
+
+    text-shadow:
+    0 2px 10px rgba(0,0,0,.9);
+}
+
+.banner-text{
+    z-index:2;
+}
+
+/* TITULOS */
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#1e3a5f;
+}
+
+/* TABLA */
+
+.tabla-section{
+    padding:80px 8%;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+thead{
+    background:#1e3a5f;
+    color:white;
+}
+
+th,
+td{
+    padding:15px;
+    text-align:center;
+}
+
+tbody tr{
+    border-bottom:1px solid #eee;
+}
+
+tbody tr:hover{
+    background:#f7f7f7;
+}
+
+/* LIDER */
+
+tbody tr:first-child{
+    background:#fff9e7;
+    font-weight:bold;
+}
+
+.table-container{
+    overflow-x:auto;
+}
+
+/* RESULTADOS */
+
+.resultados-section{
+    padding:80px 8%;
+}
+
+.partido{
+    background:white;
+
+    padding:20px;
+
+    margin-bottom:15px;
+
+    border-radius:12px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.partido strong{
+    color:#1e3a5f;
+    font-size:1.3rem;
+}
+
+/* RANKINGS */
+
+.rankings-section{
+    padding:80px 8%;
+}
+
+.ranking-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+}
+
+.ranking-card{
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.ranking-card:hover{
+    transform:translateY(-5px);
+}
+
+.ranking-card h3{
+    color:#1e3a5f;
+    margin-bottom:20px;
+}
+
+/* JUGADORES */
+
+.player-row{
+    display:flex;
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:12px;
+}
+
+.player-row img{
+    width:40px;
+    height:40px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+}
+
+.player-info{
+    flex:1;
+}
+
+.player-stat{
+    font-weight:bold;
+    color:#d4af37;
+}
+
+/* FOOTER */
+
+footer{
+    background:#1e3a5f;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav{
+        position:absolute;
+
+        top:70px;
+        right:0;
+
+        background:#1e3a5f;
+
+        width:100%;
+
+        display:none;
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:20px 0;
+    }
+
+    nav.active{
+        display:flex;
+    }
+
+    .banner{
+        height:350px;
+    }
+
+  .banner-text{
+    bottom:30px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:90%;
+
+    text-align:center;
+
+    padding:0;
+}
+
+.banner-text h1{
+    font-size:2.8rem;
+    letter-spacing:4px;
+}
+
+.banner-text h1::after{
+    width:120px;
+}
+
+.banner-text p{
+    font-size:.9rem;
+    letter-spacing:2px;
+}
+    .partido{
+        flex-direction:column;
+        gap:10px;
+    }
+
+}
