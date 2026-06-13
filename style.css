@@ -227,47 +227,102 @@ section h2{
     padding:80px 8%;
 }
 
+.tabla-titulo{
+
+    font-size:2.5rem;
+
+    font-weight:800;
+
+    color:#1e3a5f;
+
+    margin-bottom:40px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+}
+
 table{
+
     width:100%;
+
     border-collapse:collapse;
 
     background:white;
 
-    border-radius:15px;
+    border-radius:20px;
 
     overflow:hidden;
 
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
 }
 
 thead{
+
     background:#1e3a5f;
+
     color:white;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
 }
 
 th,
 td{
-    padding:15px;
+
+    padding:18px;
+
     text-align:center;
 }
-
 tbody tr{
-    border-bottom:1px solid #eee;
+
+    border-bottom:1px solid #ececec;
+
+    transition:.3s;
 }
 
 tbody tr:hover{
-    background:#f7f7f7;
+
+    background:#f5f8fc;
 }
+
 
 /* LIDER */
 
 tbody tr:first-child{
-    background:#fff9e7;
+
+    background:#fff7db;
+
     font-weight:bold;
 }
 
 .table-container{
     overflow-x:auto;
+}
+
+.pts{
+
+    background:#1e3a5f;
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+    min-width:40px;
+
+    display:inline-block;
+}
+
+.club{
+
+    font-weight:700;
+
+    color:#1e3a5f;
 }
 
 /* RESULTADOS */
@@ -362,6 +417,73 @@ tbody tr:first-child{
     color:#d4af37;
 }
 
+.lider{
+    background:#fff7db;
+    border-left:4px solid #d4af37;
+    border-radius:10px;
+    padding:12px;
+}
+
+.stats-header{
+
+    display:flex;
+    justify-content:space-between;
+
+    background:#1e3a5f;
+
+    color:white;
+
+    padding:10px 15px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    margin-bottom:10px;
+}
+
+.stats-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 15px;
+
+    border-bottom:1px solid #ececec;
+}
+
+.stats-row:last-child{
+    border-bottom:none;
+}
+
+.stats-row span:last-child{
+
+    background:#1e3a5f;
+
+    color:white;
+
+    min-width:35px;
+
+    text-align:center;
+
+    padding:5px 10px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+}
+
+.lider{
+
+    background:#fff7db;
+
+    border-left:4px solid #d4af37;
+
+    border-radius:8px;
+}
 /* FOOTER */
 
 footer{
