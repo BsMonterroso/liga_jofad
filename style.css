@@ -354,6 +354,19 @@ tbody tr:first-child{
 }
 
 /* RANKINGS */
+.player-info{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.player-info img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid #d4af37;
+}
 
 .rankings-section{
     padding:80px 8%;
