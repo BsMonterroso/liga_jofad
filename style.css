@@ -37,6 +37,7 @@ header{
     color:white;
     font-size:1.4rem;
     font-weight:bold;
+    text-decoration:none;
 }
 
 nav{
@@ -483,6 +484,141 @@ tbody tr:first-child{
     border-left:4px solid #d4af37;
 
     border-radius:8px;
+}
+
+
+.jornada{
+    padding:80px 8%;
+}
+
+.jornada h1{
+    text-align:center;
+    color:#1e3a5f;
+    margin-bottom:20px;
+}
+
+.fecha{
+    background:#d4af37;
+    color:#1e3a5f;
+    font-weight:bold;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:40px;
+}
+
+.match-card{
+
+    background:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.team{
+    text-align:center;
+}
+
+.team img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+}
+
+.hora{
+    font-size:1.8rem;
+    font-weight:bold;
+    color:#1e3a5f;
+}
+
+.descansan{
+
+    margin-top:40px;
+
+    background:#1e3a5f;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    border-radius:15px;
+}
+
+.descansan{
+
+    margin-top:40px;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.descansan-titulo{
+
+    background:#1e3a5f;
+
+    color:white;
+
+    text-align:center;
+
+    padding:15px;
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+}
+
+.equipos-descanso{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:50px;
+
+    padding:30px;
+}
+
+.equipo-descanso{
+
+    text-align:center;
+}
+
+.equipo-descanso img{
+
+    width:80px;
+
+    height:80px;
+
+    object-fit:contain;
+
+    margin-bottom:10px;
+}
+
+.equipo-descanso span{
+
+    display:block;
+
+    font-weight:bold;
+
+    color:#1e3a5f;
 }
 /* FOOTER */
 
